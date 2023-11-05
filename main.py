@@ -16,6 +16,8 @@ def load_items(filepath):
     except:
         return {}
 
+
+
 command = sys.argv[1]
 data=load_items(SAVED_DATA)
 
@@ -34,6 +36,10 @@ elif command=="copy":
         print("Data does not exist")
 elif command=="list":
     print(data)
+elif command=="empty":
+    data={}
+    save_items(SAVED_DATA,data)
+    print("Clipboard empty")
 else:
     print("Unknown command")
 

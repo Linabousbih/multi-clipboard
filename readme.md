@@ -19,7 +19,7 @@ The Clipboard Manager supports the following commands:
 Use the `save` command to store the current contents of your clipboard with a custom title.
 
 ```bash
-python main.py save [title]
+python3 main.py save [title]
 ```
 
 ### Copy
@@ -27,7 +27,7 @@ python main.py save [title]
 Use the `copy` command to retrieve data from the clipboard using its assigned title.
 
 ```bash
-python main.py copy [title]
+python3 main.py copy [title]
 ```
 
 ### List
@@ -35,5 +35,13 @@ python main.py copy [title]
 Use the `list` command to display a list of all stored data titles and their corresponding values.
 
 ```bash
-python main.py list
+python3 main.py list
+```
+
+### Empty
+
+Use the `empty` command to delete all saved data.
+
+```bash
+python3 main.py empty
 ```
