@@ -32,10 +32,8 @@ elif command=="copy":
         print("Copied to clipboard")
     else:
         print("Data does not exist")
-    #load commands
 elif command=="list":
-    print()
-    #list command
+    print(data)
 else:
     print("Unknown command")
 
